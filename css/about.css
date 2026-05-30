@@ -1,0 +1,604 @@
+/* ================================================
+   about.css — About Page Styles
+   FitVault · Marcus Osei Fitness
+
+   Depends on: styles.css (must load first)
+   Covers: Page header (split photo/text), Origin
+           story, Philosophy grid, Credentials,
+           Outside the work, CTA
+   ================================================ */
+
+
+/* ════════════════════════════════
+   SECTION 1 — PAGE HEADER
+   Split: photo left, text right
+════════════════════════════════ */
+#about-header {
+  background: var(--color-dark-bg);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.about-header-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  align-items: center;
+}
+
+/* ── Photo column ── */
+.about-photo-col {
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.about-photo-wrap {
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.about-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background: #100C08;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+
+/* When a real image is dropped in */
+.about-photo-placeholder img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* Gradient fade — right edge bleeds into dark bg */
+.about-photo-placeholder::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, transparent 50%, var(--color-dark-bg) 100%),
+    linear-gradient(to bottom, var(--color-dark-bg) 0%, transparent 15%, transparent 80%, var(--color-dark-bg) 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.about-photo-bg-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.about-photo-bg-svg svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-placeholder-note {
+  position: relative;
+  z-index: 3;
+  font-size: 11px;
+  color: rgba(255,255,255,0.2);
+  letter-spacing: 0.05em;
+  padding: 8px 16px;
+  background: rgba(0,0,0,0.4);
+  border: 1px solid rgba(212,135,44,0.2);
+  border-radius: var(--radius-sm);
+  backdrop-filter: blur(8px);
+}
+
+/* ── Floating credential card ── */
+.about-cred-card {
+  position: absolute;
+  bottom: 40px;
+  right: -24px;
+  z-index: 4;
+  background: var(--color-dark-surface);
+  border: 1px solid var(--color-dark-border);
+  border-radius: var(--radius-lg);
+  padding: 18px 22px;
+  min-width: 210px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+}
+
+.cred-card-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--color-dark-border);
+}
+
+.cred-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: white;
+  font-size: 12px;
+  font-weight: var(--font-bold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cred-name {
+  font-size: 14px;
+  font-weight: var(--font-semibold);
+  color: var(--color-text-inverse);
+  line-height: 1.2;
+}
+
+.cred-title {
+  font-size: 11px;
+  color: var(--color-text-inverse-subtle);
+  margin-top: 1px;
+}
+
+.cred-stats {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cred-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cred-stat-num {
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--color-accent);
+  line-height: 1;
+}
+
+.cred-stat-num span { font-size: 13px; }
+
+.cred-stat-label {
+  font-size: 10px;
+  color: var(--color-text-inverse-subtle);
+  margin-top: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.cred-stat-sep {
+  width: 1px;
+  height: 24px;
+  background: var(--color-dark-border);
+}
+
+/* ── Text column ── */
+.about-header-text {
+  padding: 140px var(--page-margin) 100px 56px;
+}
+
+.about-main-headline {
+  font-family: var(--font-display);
+  font-size: clamp(42px, 5.5vw, 72px);
+  line-height: 1.05;
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-text-inverse);
+  margin-bottom: 32px;
+}
+.about-main-headline em {
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+/* ── 3-pillar SVG ── */
+.about-header-pillars {
+  margin-bottom: 28px;
+}
+
+#pillars-svg {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  overflow: visible;
+}
+
+.about-header-sub {
+  font-size: clamp(15px, 1.8vw, 17px);
+  line-height: var(--leading-body);
+  color: var(--color-text-inverse-muted);
+  max-width: 480px;
+  margin-bottom: 36px;
+}
+
+.about-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.about-header-actions .link-cta { color: var(--color-text-inverse-muted); }
+.about-header-actions .link-cta:hover { color: var(--color-accent); }
+
+/* ── Responsive header ── */
+@media (max-width: 1024px) {
+  .about-header-inner { grid-template-columns: 1fr; min-height: auto; }
+
+  .about-photo-col {
+    height: 60vw;
+    min-height: 320px;
+    max-height: 480px;
+  }
+  .about-photo-wrap { height: 100%; min-height: unset; }
+  .about-photo-placeholder { min-height: unset; height: 100%; }
+  .about-photo-placeholder::after {
+    background:
+      linear-gradient(to bottom, var(--color-dark-bg) 0%, transparent 20%, transparent 70%, var(--color-dark-bg) 100%);
+  }
+
+  .about-cred-card {
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .about-header-text {
+    padding: 48px var(--page-margin) 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-photo-col { height: 70vw; max-height: 380px; }
+  .about-main-headline { font-size: clamp(36px, 9vw, 52px); }
+  .about-cred-card { display: none; }
+}
+
+
+/* ════════════════════════════════
+   SECTION 2 — ORIGIN STORY
+════════════════════════════════ */
+#origin {
+  padding: var(--section-padding) 0;
+  background: var(--color-primary-light);
+}
+
+.origin-inner {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.origin-label .section-eyebrow {
+  position: sticky;
+  top: 100px;
+}
+
+.origin-headline {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-snug);
+  color: var(--color-text-primary);
+  margin-bottom: 36px;
+  max-width: 600px;
+}
+
+.origin-body p {
+  font-size: 17px;
+  line-height: 1.85;
+  color: var(--color-text-secondary);
+  margin-bottom: 20px;
+  max-width: 640px;
+}
+
+/* ── Pull quote ── */
+.origin-pullquote {
+  margin: 40px 0;
+  padding: 28px 32px;
+  border-left: 3px solid var(--color-accent);
+  background: var(--color-accent-light);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  max-width: 580px;
+}
+
+.origin-pullquote p {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(18px, 2.2vw, 22px) !important;
+  line-height: var(--leading-relaxed) !important;
+  color: var(--color-text-primary) !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 900px) {
+  .origin-inner { grid-template-columns: 1fr; gap: 32px; }
+  .origin-label .section-eyebrow { position: static; }
+}
+
+@media (max-width: 600px) {
+  .origin-body p { font-size: 16px; line-height: 1.75; }
+}
+
+
+/* ════════════════════════════════
+   SECTION 3 — PHILOSOPHY
+════════════════════════════════ */
+#philosophy {
+  padding: var(--section-padding) 0;
+  background: var(--color-dark-bg);
+}
+
+#philosophy .section-eyebrow { color: var(--color-accent); }
+#philosophy .section-headline { color: var(--color-text-inverse); }
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background: var(--color-dark-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.philosophy-block {
+  background: var(--color-dark-bg);
+  padding: 48px 44px;
+  position: relative;
+  transition: background var(--transition-base);
+}
+.philosophy-block:hover { background: #141414; }
+
+.philosophy-block--alt {
+  background: var(--color-dark-surface);
+}
+.philosophy-block--alt:hover { background: #1E1E1E; }
+
+/* Animated amber rule */
+.phil-rule {
+  width: 0;
+  height: 2px;
+  background: var(--color-accent);
+  margin-bottom: 24px;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0.8;
+}
+.phil-rule.expanded { width: 36px; }
+
+.phil-headline {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 2.5vw, 30px);
+  line-height: var(--leading-normal);
+  letter-spacing: var(--tracking-snug);
+  color: var(--color-text-inverse);
+  margin-bottom: 18px;
+}
+.phil-headline em {
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+.phil-body {
+  font-size: 15px;
+  line-height: var(--leading-body);
+  color: var(--color-text-inverse-muted);
+  margin: 0;
+  max-width: none;
+}
+
+@media (max-width: 768px) {
+  .philosophy-grid { grid-template-columns: 1fr; }
+  .philosophy-block { padding: 36px 28px; }
+}
+
+
+/* ════════════════════════════════
+   SECTION 4 — CREDENTIALS
+════════════════════════════════ */
+#credentials {
+  padding: var(--section-padding) 0;
+  background: var(--color-secondary-gray);
+}
+
+.credentials-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.credentials-headline {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-snug);
+  color: var(--color-text-primary);
+  margin-bottom: 20px;
+}
+
+.credentials-lead {
+  font-size: 17px;
+  line-height: var(--leading-body);
+  color: var(--color-text-secondary);
+  margin-bottom: 16px;
+  max-width: none;
+}
+
+.credentials-body {
+  font-size: 16px;
+  line-height: var(--leading-body);
+  color: var(--color-text-secondary);
+  margin-bottom: 12px;
+  max-width: none;
+}
+
+/* ── Certifications list ── */
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.cert-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: var(--color-primary-light);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+.cert-item:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 2px 12px rgba(212,135,44,0.06);
+}
+
+.cert-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--color-accent-light);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.cert-name {
+  font-size: 14px;
+  font-weight: var(--font-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: 2px;
+}
+
+.cert-body {
+  font-size: 13px;
+  color: var(--color-text-tertiary);
+}
+
+/* ── Experience stats grid ── */
+.exp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.exp-item {
+  background: var(--color-primary-light);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: 20px 18px;
+  text-align: center;
+  transition: border-color var(--transition-base);
+}
+.exp-item:hover { border-color: var(--color-accent); }
+
+.exp-num {
+  font-family: var(--font-display);
+  font-size: 36px;
+  color: var(--color-accent);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.exp-num span {
+  font-size: 22px;
+  color: var(--color-accent);
+}
+
+.exp-label {
+  font-size: 12px;
+  color: var(--color-text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+}
+
+@media (max-width: 900px) {
+  .credentials-inner { grid-template-columns: 1fr; gap: 40px; }
+}
+
+
+/* ════════════════════════════════
+   SECTION 5 — OUTSIDE THE WORK
+════════════════════════════════ */
+#outside {
+  padding: calc(var(--section-padding) * 0.75) 0;
+  background: var(--color-primary-light);
+  border-top: 1px solid var(--color-border-light);
+}
+
+.outside-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 700px;
+}
+
+.outside-icon {
+  flex-shrink: 0;
+}
+.outside-icon svg {
+  width: 80px;
+  height: 80px;
+}
+
+.outside-headline {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 2.5vw, 28px);
+  line-height: var(--leading-snug);
+  color: var(--color-text-primary);
+  margin-bottom: 14px;
+}
+
+.outside-body {
+  font-size: 16px;
+  line-height: var(--leading-body);
+  color: var(--color-text-secondary);
+  margin-bottom: 10px;
+  max-width: none;
+}
+
+@media (max-width: 600px) {
+  .outside-inner { flex-direction: column; gap: 24px; }
+  .outside-icon { display: none; }
+}
+
+
+/* ════════════════════════════════
+   SECTION 6 — CTA
+════════════════════════════════ */
+#about-cta {
+  padding: var(--section-padding) 0;
+  background: var(--color-accent-light);
+  text-align: center;
+  position: relative;
+}
+#about-cta::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--color-accent);
+}
+
+/* ── Active nav link ── */
+.nav-active {
+  color: var(--color-accent) !important;
+}

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Real client results from Marcus Osei Fitness — finance analysts, tech founders, parents, and executives who built sustainable fitness habits around their real lives.">
+  <title>Client Results — Marcus Osei Fitness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/results.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">Marcus<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="how_it_works.html">How It Works</a></li>
+      <li><a href="results.html" class="nav-active">Results</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="book_a_call.html" class="nav-cta">Book a Call</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="how_it_works.html">How It Works</a>
+    <a href="results.html">Results</a>
+    <a href="about.html">About</a>
+    <a href="book_a_call.html" class="mobile-cta">Book a Free Call</a>
+  </div>
+
+  <main>
+
+    <!-- ══════════════════════════════════
+         SECTION 1 — PAGE HEADER
+    ══════════════════════════════════ -->
+    <header id="results-header">
+
+      <!-- Background SVG: faded editorial collage conveying transformation context -->
+      <div class="results-header-bg" aria-hidden="true">
+        <svg class="results-bg-svg" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="rg1" cx="20%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#2A1F0F" stop-opacity="0.6"/>
+              <stop offset="100%" stop-color="#0A0A0A" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="rg2" cx="80%" cy="40%" r="45%">
+              <stop offset="0%" stop-color="#1A1208" stop-opacity="0.5"/>
+              <stop offset="100%" stop-color="#0A0A0A" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="1200" height="700" fill="#0F0F0F"/>
+          <ellipse cx="240" cy="350" rx="350" ry="280" fill="url(#rg1)"/>
+          <ellipse cx="960" cy="280" rx="300" ry="240" fill="url(#rg2)"/>
+
+          <!-- Abstract transformation arc — left person (before: slouched) -->
+          <g opacity="0.12">
+            <ellipse cx="200" cy="580" rx="40" ry="40" fill="#D4872C"/>
+            <rect x="185" y="480" width="30" height="100" rx="15" fill="#D4872C"/>
+            <rect x="155" y="510" width="70" height="20" rx="10" fill="#D4872C"/>
+            <rect x="180" y="580" width="18" height="60" rx="9" fill="#D4872C"/>
+            <rect x="202" y="580" width="18" height="60" rx="9" fill="#D4872C"/>
+          </g>
+
+          <!-- Right person (after: upright, strong) -->
+          <g opacity="0.18">
+            <ellipse cx="1020" cy="260" rx="36" ry="36" fill="#D4872C"/>
+            <rect x="1006" y="160" width="28" height="100" rx="14" fill="#D4872C"/>
+            <rect x="966" y="185" width="88" height="18" rx="9" fill="#D4872C"/>
+            <rect x="1001" y="260" width="16" height="80" rx="8" fill="#D4872C"/>
+            <rect x="1021" y="260" width="16" height="80" rx="8" fill="#D4872C"/>
+          </g>
+
+          <!-- Arrow arc between before and after -->
+          <path d="M260 450 C400 200 800 200 970 330" stroke="#D4872C" stroke-width="1.5" fill="none" stroke-dasharray="8 6" opacity="0.15"/>
+
+          <!-- Scattered stat labels -->
+          <g opacity="0.08" font-family="DM Serif Display, Georgia, serif" font-style="italic">
+            <text x="380" y="180" font-size="72" fill="#D4872C">11kg</text>
+            <text x="650" y="540" font-size="56" fill="#D4872C">5 months</text>
+            <text x="100" y="300" font-size="48" fill="#D4872C">120+</text>
+          </g>
+
+          <!-- Grid lines for editorial feel -->
+          <line x1="0" y1="350" x2="1200" y2="350" stroke="#D4872C" stroke-width="0.5" opacity="0.06"/>
+          <line x1="600" y1="0" x2="600" y2="700" stroke="#D4872C" stroke-width="0.5" opacity="0.06"/>
+        </svg>
+        <!-- Gradient overlays: heavy left fade, top & bottom vignette -->
+        <div class="results-header-overlay"></div>
+      </div>
+
+      <div class="container">
+        <div class="results-header-content">
+          <p class="section-eyebrow reveal">Client results</p>
+          <h1 class="results-main-headline reveal reveal-delay-1">Real clients.<br>Real results.<br><em>Real context.</em></h1>
+          <p class="results-main-sub reveal reveal-delay-2">These aren't fitness models. They're finance analysts, tech founders, parents, and executives — people with schedules and lives that look a lot like yours. Here's what happened when they got a coach who built around their reality.</p>
+
+          <!-- Animated counter stats -->
+          <div class="results-header-stats reveal reveal-delay-3">
+            <div class="header-stat">
+              <div class="header-stat-num" data-target="120">0</div>
+              <div class="header-stat-suffix">+ clients coached</div>
+            </div>
+            <div class="header-stat-divider"></div>
+            <div class="header-stat">
+              <div class="header-stat-num" data-target="6">0</div>
+              <div class="header-stat-suffix">years of experience</div>
+            </div>
+            <div class="header-stat-divider"></div>
+            <div class="header-stat">
+              <div class="header-stat-num" data-target="0">0</div>
+              <div class="header-stat-suffix">automated replies — ever</div>
+              <div class="header-stat-label">Every message is personal</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- ══════════════════════════════════
+         SECTION 2 — FEATURED TRANSFORMATIONS
+    ══════════════════════════════════ -->
+    <section id="transformations">
+      <div class="container">
+
+        <p class="transformations-intro reveal">Every story below started the same way: with someone who'd tried before and wasn't sure this would be different. Here's what made it different.</p>
+
+        <!-- Transformation 1: Adaeze — Corporate Professional -->
+        <article class="transformation" id="t1">
+          <div class="transformation-image-col reveal">
+            <div class="transformation-photo-wrap">
+              <div class="transformation-photo-placeholder">
+                <div class="photo-initials">AN</div>
+                <span class="photo-swap-note">Replace with Adaeze's photo</span>
+              </div>
+              <div class="transformation-stats-badge">
+                <div class="t-stat"><span class="t-stat-num">11<span class="t-stat-unit">kg</span></span><span class="t-stat-label">Lost</span></div>
+                <div class="t-stat-divider"></div>
+                <div class="t-stat"><span class="t-stat-num">5<span class="t-stat-unit">mo</span></span><span class="t-stat-label">Timeline</span></div>
+                <div class="t-stat-divider"></div>
+                <div class="t-stat"><span class="t-stat-num">0<span class="t-stat-unit">gym</span></span><span class="t-stat-label">Required</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="transformation-content reveal reveal-delay-1">
+            <div class="transformation-identity">
+              <span class="t-tag">Corporate Professional</span>
+              <h2 class="t-name">Adaeze N.</h2>
+              <p class="t-role">Corporate Finance Analyst · Lagos</p>
+            </div>
+
+            <div class="t-section">
+              <div class="t-section-label">The starting point</div>
+              <p>"I was working 10–12 hour days on the Island. I'd tried two fitness apps, joined a gym I never used, and downloaded probably five workout PDFs that stayed untouched on my phone. I wasn't lazy — I just couldn't figure out how to fit fitness into a life where I left home at 6:30am and got back at 8pm, exhausted."</p>
+            </div>
+
+            <div class="t-section">
+              <div class="t-section-label">What Marcus focused on</div>
+              <div class="t-focus-tags">
+                <span>Consistency over intensity</span>
+                <span>30-min home sessions</span>
+                <span>Weekly accountability</span>
+              </div>
+            </div>
+
+            <blockquote class="t-quote">
+              <p>"I expected Marcus to give me some perfect plan I'd fail at. Instead, he gave me a realistic one I could actually do. The weekly check-ins were everything — I've never stuck to anything this long. Knowing someone's watching, someone who actually cares if I show up, made all the difference. I didn't just lose weight. I built a habit that's still here."</p>
+              <cite>— Adaeze N., Financial Analyst, Lagos</cite>
+            </blockquote>
+          </div>
+        </article>
+
+        <!-- Transformation 2: Kofi — Serial App Quitter -->
+        <article class="transformation transformation--flip" id="t2">
+          <div class="transformation-content reveal">
+            <div class="transformation-identity">
+              <span class="t-tag t-tag--dark">Serial App Quitter</span>
+              <h2 class="t-name">Kofi A.</h2>
+              <p class="t-role">Tech Entrepreneur · Accra</p>
+            </div>
+
+            <div class="t-section">
+              <div class="t-section-label">The starting point</div>
+              <p>"I'd tried everything. Noom. MyFitnessPal. Two other training apps I can't even remember the names of. I'd start strong, do well for two weeks, then life would get busy and I'd just... stop. No one noticed. No one followed up. I knew what to do — I didn't need more information. I needed someone to hold me accountable."</p>
+            </div>
+
+            <div class="t-section">
+              <div class="t-section-label">What Marcus focused on</div>
+              <div class="t-focus-tags">
+                <span>Rebuilding self-trust</span>
+                <span>Accountability structure</span>
+                <span>Sustaining past 90 days</span>
+              </div>
+            </div>
+
+            <blockquote class="t-quote">
+              <p>"The programme is good, but it's not magic — it's similar to what I'd tried before. What's different is Marcus. He checks in every week. He responds to my messages. When I had to travel to South Africa for two weeks, he adjusted my plan before I even asked. It's the first time someone actually noticed when I was about to quit — and pulled me back before it happened."</p>
+              <cite>— Kofi A., Tech Founder, Accra</cite>
+            </blockquote>
+          </div>
+
+          <div class="transformation-image-col reveal reveal-delay-1">
+            <div class="transformation-photo-wrap">
+              <div class="transformation-photo-placeholder transformation-photo-placeholder--dark">
+                <div class="photo-initials">KA</div>
+                <span class="photo-swap-note">Replace with Kofi's photo</span>
+              </div>
+              <div class="transformation-stats-badge">
+                <div class="t-stat"><span class="t-stat-num">+4<span class="t-stat-unit">kg</span></span><span class="t-stat-label">Lean mass</span></div>
+                <div class="t-stat-divider"></div>
+                <div class="t-stat"><span class="t-stat-num">7<span class="t-stat-unit">mo</span></span><span class="t-stat-label">Ongoing</span></div>
+                <div class="t-stat-divider"></div>
+                <div class="t-stat"><span class="t-stat-num">0</span><span class="t-stat-label">Check-ins missed</span></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Transformation 3: Bimpe — Overwhelmed Parent -->
+        <article class="transformation" id="t3">
+          <div class="transformation-image-col reveal">
+            <div class="transformation-photo-wrap">
+              <div class="transformation-photo-placeholder transformation-photo-placeholder--warm">
+                <div class="photo-initials">BO</div>
+                <span class="photo-swap-note">Replace with Bimpe's photo</span>
+              </div>
+              <div class="transformation-stats-badge">
+                <div class="t-stat"><span class="t-stat-num">9<span class="t-stat-unit">kg</span></span><span class="t-stat-label">Lost</span></div>
+                <div class="t-stat-divider"></div>
+                <div class="t-stat"><span class="t-stat-num">6<span class="t-stat-unit">mo</span></span><span class="t-stat-label">Timeline</span></div>
+                <div class="t-stat-divider"></div>
+                <div class="t-stat"><span class="t-stat-num">20<span class="t-stat-unit">min</span></span><span class="t-stat-label">Sessions</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="transformation-content reveal reveal-delay-1">
+            <div class="transformation-identity">
+              <span class="t-tag">New Mum · Former Banker</span>
+              <h2 class="t-name">Bimpe O.</h2>
+              <p class="t-role">Mother of Two · Ibadan</p>
+            </div>
+
+            <div class="t-section">
+              <div class="t-section-label">The starting point</div>
+              <p>"I had my second baby and felt completely lost. My body didn't feel like mine anymore. I was exhausted, scared of injuring myself, and overwhelmed. I didn't want to look like a fitness model — I just wanted to feel strong and healthy again. But I didn't even know where to start."</p>
+            </div>
+
+            <div class="t-section">
+              <div class="t-section-label">What Marcus focused on</div>
+              <div class="t-focus-tags">
+                <span>Safety-first recovery</span>
+                <span>Flexible 20-min sessions</span>
+                <span>No restriction dieting</span>
+              </div>
+            </div>
+
+            <blockquote class="t-quote">
+              <p>"Marcus never made me feel like I was behind or failing. When my daughter was sick and I missed a whole week, he just adjusted the next week's plan — no guilt, no judgment. He understood that my life wasn't predictable, and he built around that. I'm stronger now than I was before my first pregnancy. I didn't think that was possible six months ago."</p>
+              <cite>— Bimpe O., Mother of Two, Ibadan</cite>
+            </blockquote>
+          </div>
+        </article>
+
+        <!-- Transformation 4: Chidi — Travelling Executive -->
+        <article class="transformation transformation--flip" id="t4">
+          <div class="transformation-content reveal">
+            <div class="transformation-identity">
+              <span class="t-tag t-tag--dark">Time-Starved Executive</span>
+              <h2 class="t-name">Chidi M.</h2>
+              <p class="t-role">Operations Director · Port Harcourt</p>
+            </div>
+
+            <div class="t-section">
+              <div class="t-section-label">The starting point</div>
+              <p>"I travel three weeks out of every month. I'd managed to stay somewhat fit in my 20s, but by 35 I'd put on 15kg and had zero consistency. I assumed online coaching wouldn't work for me — how could anyone design a programme when my life changed every week?"</p>
+            </div>
+
+            <div class="t-section">
+              <div class="t-section-label">What Marcus focused on</div>
+              <div class="t-focus-tags">
+                <span>Modular travel system</span>
+                <span>Pre-trip plan adjustments</span>
+                <span>Momentum through chaos</span>
+              </div>
+            </div>
+
+            <blockquote class="t-quote">
+              <p>"I expected Marcus to give up on me when I told him my schedule. Instead, he said 'we'll work with it.' And we did. I've trained in hotel gyms in Abuja, Lagos, Kano, and London — all following the same system. For the first time in years, I have a fitness routine that doesn't fall apart the second I leave home."</p>
+              <cite>— Chidi M., Operations Director, Port Harcourt</cite>
+            </blockquote>
+          </div>
+
+          <div class="transformation-image-col reveal reveal-delay-1">
+            <div class="transformation-photo-wrap">
+              <div class="transformation-photo-placeholder transformation-photo-placeholder--exec">
+                <div class="photo-initials">CM</div>
+                <span class="photo-swap-note">Replace with Chidi's photo</span>
+              </div>
+              <div class="transformation-stats-badge">
+                <div class="t-stat"><span class="t-stat-num">12<span class="t-stat-unit">kg</span></span><span class="t-stat-label">Lost</span></div>
+                <div class="t-stat-divider"></div>
+                <div class="t-stat"><span class="t-stat-num">8<span class="t-stat-unit">mo</span></span><span class="t-stat-label">Timeline</span></div>
+                <div class="t-stat-divider"></div>
+                <div class="t-stat"><span class="t-stat-num">4<span class="t-stat-unit">cities</span></span><span class="t-stat-label">Trained in</span></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════
+         SECTION 3 — QUICK PROOF GRID
+    ══════════════════════════════════ -->
+    <section id="proof-grid">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow reveal">More voices</p>
+          <h2 class="section-headline reveal reveal-delay-1">More voices. Same pattern.</h2>
+          <p class="section-sub reveal reveal-delay-2">Quick proof from clients who've been where you are.</p>
+        </div>
+
+        <!-- Animated SVG — trust signal bar above quotes -->
+        <div class="trust-signal-bar reveal reveal-delay-1" aria-hidden="true">
+          <svg id="trust-svg" viewBox="0 0 900 80" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#D4872C" stop-opacity="0.08"/>
+                <stop offset="50%" stop-color="#D4872C" stop-opacity="0.15"/>
+                <stop offset="100%" stop-color="#D4872C" stop-opacity="0.08"/>
+              </linearGradient>
+            </defs>
+            <rect x="0" y="20" width="900" height="40" rx="8" fill="url(#barGrad)"/>
+            <!-- Progress dots -->
+            <g id="trust-dots">
+              <circle cx="60"  cy="40" r="4" fill="#D4872C" opacity="0"/>
+              <circle cx="160" cy="40" r="4" fill="#D4872C" opacity="0"/>
+              <circle cx="260" cy="40" r="4" fill="#D4872C" opacity="0"/>
+              <circle cx="360" cy="40" r="4" fill="#D4872C" opacity="0"/>
+              <circle cx="460" cy="40" r="4" fill="#D4872C" opacity="0"/>
+              <circle cx="560" cy="40" r="4" fill="#D4872C" opacity="0"/>
+              <circle cx="660" cy="40" r="4" fill="#D4872C" opacity="0"/>
+              <circle cx="760" cy="40" r="4" fill="#D4872C" opacity="0"/>
+              <circle cx="840" cy="40" r="4" fill="#D4872C" opacity="0"/>
+            </g>
+            <!-- Fill line that draws across -->
+            <line id="trust-line" x1="60" y1="40" x2="60" y2="40"
+              stroke="#D4872C" stroke-width="1.5" opacity="0.4"/>
+            <!-- Labels -->
+            <text x="60"  y="14" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#D4872C" opacity="0.6">Ngozi K.</text>
+            <text x="160" y="14" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#D4872C" opacity="0.6">Femi D.</text>
+            <text x="260" y="14" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#D4872C" opacity="0.6">Ama S.</text>
+            <text x="360" y="14" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#D4872C" opacity="0.6">Tunde E.</text>
+            <text x="460" y="14" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#D4872C" opacity="0.6">Yemi R.</text>
+            <text x="560" y="14" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#D4872C" opacity="0.6">Kwame O.</text>
+            <text x="660" y="14" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#D4872C" opacity="0.6">Zainab M.</text>
+            <text x="760" y="14" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#D4872C" opacity="0.6">Segun A.</text>
+            <text x="840" y="68" text-anchor="middle" font-family="DM Serif Display,Georgia,serif" font-style="italic" font-size="11" fill="#D4872C" opacity="0.5">+ more</text>
+          </svg>
+        </div>
+
+        <div class="quotes-grid">
+          <!-- Large featured quote 1 -->
+          <div class="quote-card quote-card--large reveal reveal-delay-1">
+            <div class="quote-mark">"</div>
+            <p class="quote-text">Tried to do this on my own for two years. Made more progress in six months with Marcus than I did in those two years combined.</p>
+            <div class="quote-attribution">
+              <div class="quote-avatar">AS</div>
+              <div>
+                <div class="quote-name">Ama S.</div>
+                <div class="quote-role">Marketing Manager · Accra</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Small quote 1 -->
+          <div class="quote-card reveal reveal-delay-2">
+            <div class="quote-mark">"</div>
+            <p class="quote-text">Lost 8kg in four months without cutting out any foods I actually enjoy. Just smarter portions and consistency. Marcus made it simple.</p>
+            <div class="quote-attribution">
+              <div class="quote-avatar">NK</div>
+              <div>
+                <div class="quote-name">Ngozi K.</div>
+                <div class="quote-role">Lawyer · Lagos</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Small quote 2 -->
+          <div class="quote-card reveal reveal-delay-1">
+            <div class="quote-mark">"</div>
+            <p class="quote-text">I work night shifts as a doctor. Marcus built my training around when I could actually recover. First coach who understood my sleep schedule matters.</p>
+            <div class="quote-attribution">
+              <div class="quote-avatar">FD</div>
+              <div>
+                <div class="quote-name">Femi D.</div>
+                <div class="quote-role">Physician · Ibadan</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Small quote 3 -->
+          <div class="quote-card reveal reveal-delay-2">
+            <div class="quote-mark">"</div>
+            <p class="quote-text">The weekly check-ins are why I haven't quit. Knowing I have to report to someone who actually reads my messages keeps me honest.</p>
+            <div class="quote-attribution">
+              <div class="quote-avatar">TE</div>
+              <div>
+                <div class="quote-name">Tunde E.</div>
+                <div class="quote-role">Consultant · Lagos</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Large featured quote 2 -->
+          <div class="quote-card quote-card--large reveal reveal-delay-1">
+            <div class="quote-mark">"</div>
+            <p class="quote-text">I'm 41. I assumed getting back in shape would take forever or require something extreme. Lost 10kg in five months with workouts I could do at home. It's sustainable.</p>
+            <div class="quote-attribution">
+              <div class="quote-avatar">YR</div>
+              <div>
+                <div class="quote-name">Yemi R.</div>
+                <div class="quote-role">Business Owner · Abuja</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Small quote 4 -->
+          <div class="quote-card reveal reveal-delay-2">
+            <div class="quote-mark">"</div>
+            <p class="quote-text">Marcus adjusted my programme three times in the first two months because of work chaos. Never got frustrated. Just adapted. That's the difference.</p>
+            <div class="quote-attribution">
+              <div class="quote-avatar">KO</div>
+              <div>
+                <div class="quote-name">Kwame O.</div>
+                <div class="quote-role">Tech Lead · Remote</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Small quote 5 -->
+          <div class="quote-card reveal reveal-delay-1">
+            <div class="quote-mark">"</div>
+            <p class="quote-text">I travel constantly for work. He's built programmes for me in hotels in four different countries. I've never had this kind of consistency before.</p>
+            <div class="quote-attribution">
+              <div class="quote-avatar">ZM</div>
+              <div>
+                <div class="quote-name">Zainab M.</div>
+                <div class="quote-role">Sales Director · Lagos</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Small quote 6 -->
+          <div class="quote-card reveal reveal-delay-2">
+            <div class="quote-mark">"</div>
+            <p class="quote-text">I thought I needed a gym membership. Marcus showed me I just needed a plan that actually fit my life. Trained at home the whole time.</p>
+            <div class="quote-attribution">
+              <div class="quote-avatar">SA</div>
+              <div>
+                <div class="quote-name">Segun A.</div>
+                <div class="quote-role">Accountant · Ibadan</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════
+         SECTION 4 — THE PATTERN
+    ══════════════════════════════════ -->
+    <section id="the-pattern">
+      <div class="container">
+        <div class="pattern-inner">
+          <div class="pattern-label reveal">
+            <p class="section-eyebrow">The pattern</p>
+          </div>
+          <div class="pattern-content">
+            <h2 class="pattern-headline reveal reveal-delay-1">What these stories have in common.</h2>
+            <p class="pattern-lead reveal reveal-delay-2">Every client above was busy. Every one had tried something before. Every one was skeptical that online coaching would actually work.</p>
+            <p class="pattern-lead reveal reveal-delay-2">What made the difference wasn't a secret workout formula or a magic nutrition protocol.</p>
+
+            <div class="pattern-statements">
+              <div class="pattern-statement reveal reveal-delay-1">
+                <div class="pattern-rule"></div>
+                <p class="pattern-statement-text">Built a programme around their <em>actual life</em> — not a template.</p>
+              </div>
+              <div class="pattern-statement reveal reveal-delay-2">
+                <div class="pattern-rule"></div>
+                <p class="pattern-statement-text">Checked in <em>every single week</em> — not just when they remembered.</p>
+              </div>
+              <div class="pattern-statement reveal reveal-delay-3">
+                <div class="pattern-rule"></div>
+                <p class="pattern-statement-text">Adjusted when life got complicated — <em>never abandoned them.</em></p>
+              </div>
+            </div>
+
+            <p class="pattern-close reveal reveal-delay-4">That's what real coaching looks like. That's why it works when apps and generic plans don't. The method is proven. The question is whether you're ready to commit to the process.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════
+         SECTION 5 — CTA
+    ══════════════════════════════════ -->
+    <section id="results-cta">
+      <div class="container">
+        <p class="cta-eyebrow middle-margin reveal">Your turn</p>
+        <h2 class="cta-headline reveal reveal-delay-1">Your story starts with a conversation.</h2>
+        <p class="cta-body reveal reveal-delay-2">Every transformation above began with a free strategy call. No different than the one I'm offering you right now. Book 25 minutes. We'll talk about where you are, where you want to be, and whether I'm the right coach for your situation. No pitch. No pressure. Just clarity.</p>
+        <div class="reveal reveal-delay-3">
+          <a href="booking.html" class="btn-primary" style="display:inline-flex;">
+            Book Your Free Strategy Call
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <p class="cta-reassurance reveal middle-margin reveal-delay-4">No cost. No commitment. Just a straightforward conversation about your goals.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Marcus<span>.</span></div>
+        <p class="footer-tagline">Personal fitness coaching for busy professionals across West Africa. Real coaching. Real results.</p>
+      </div>
+      <div>
+        <p class="footer-col-label">Navigate</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="how_it_works.html">How It Works</a></li>
+          <li><a href="results.html">Results</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="book_a_call.html">Book a Call</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-label">Contact</p>
+        <ul class="footer-links">
+          <li><a href="https://wa.me/[number]">WhatsApp</a></li>
+          <li><a href="https://instagram.com/marcusosei.fitness">@marcusosei.fitness</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-legal">© 2025 Marcus Osei Fitness. All rights reserved.</span>
+      <div class="footer-social">
+        <a href="https://instagram.com/marcusosei.fitness">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          Instagram
+        </a>
+        <a href="https://wa.me/[number]">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/results.js"></script>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Marcus Osei — certified personal trainer and nutrition coach based in Lagos. Six years coaching busy professionals across West Africa to build fitness habits that actually fit their lives.">
+  <title>About Marcus — Marcus Osei Fitness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/about.css">
+  <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">Marcus<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="how_it_works.html">How It Works</a></li>
+      <li><a href="results.html">Results</a></li>
+      <li><a href="about.html" class="nav-active">About</a></li>
+      <li><a href="booking.html" class="nav-cta">Book a Call</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="how_it_works.html">How It Works</a>
+    <a href="results.html">Results</a>
+    <a href="about.html">About</a>
+    <a href="book_a_call.html" class="mobile-cta">Book a Free Call</a>
+  </div>
+
+  <main>
+
+    <!-- ══════════════════════════════════
+         SECTION 1 — PAGE HEADER
+    ══════════════════════════════════ -->
+    <header id="about-header">
+      <div class="about-header-inner">
+
+        <!-- Left: Photo column -->
+        <div class="about-photo-col reveal">
+          <div class="about-photo-wrap">
+            <div class="about-photo-placeholder" id="marcus-photo">
+            <img src="/images/coach.jpg" alt="Marcus Osei">
+             
+            
+            </div>
+
+            <!-- Floating credential card -->
+            <div class="about-cred-card reveal reveal-delay-2">
+              <div class="cred-card-top">
+                <div class="cred-avatar">MO</div>
+                <div>
+                  <div class="cred-name">Marcus Osei</div>
+                  <div class="cred-title">Certified Fitness Coach</div>
+                </div>
+              </div>
+              <div class="cred-stats">
+                <div class="cred-stat">
+                  <span class="cred-stat-num">150<span>+</span></span>
+                  <span class="cred-stat-label">Clients</span>
+                </div>
+                <div class="cred-stat-sep"></div>
+                <div class="cred-stat">
+                  <span class="cred-stat-num">6</span>
+                  <span class="cred-stat-label">Years</span>
+                </div>
+                <div class="cred-stat-sep"></div>
+                <div class="cred-stat">
+                  <span class="cred-stat-num">3</span>
+                  <span class="cred-stat-label">Countries</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Headline & intro -->
+        <div class="about-header-text">
+          <p class="section-eyebrow reveal">About Marcus</p>
+          <h1 class="about-main-headline reveal reveal-delay-1">I'm Marcus.<br>Here's why<br><em>I do this.</em></h1>
+
+          <!-- Animated SVG — 3 pillars of Marcus's approach -->
+          <div class="about-header-pillars reveal reveal-delay-2" aria-hidden="true">
+            <svg id="pillars-svg" viewBox="0 0 340 120" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <marker id="aArrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                  <path d="M0,0 L0,6 L6,3 z" fill="#D4872C" opacity="0.5"/>
+                </marker>
+              </defs>
+
+              <!-- Connecting line -->
+              <line id="pillar-line" x1="40" y1="60" x2="40" y2="60"
+                stroke="#D4872C" stroke-width="1" stroke-dasharray="4 3" opacity="0.3"/>
+
+              <!-- Pillar 1: Person -->
+              <g id="pillar-1" opacity="0">
+                <circle cx="40" cy="60" r="28" fill="#1A1A1A" stroke="#2A2A2A" stroke-width="1"/>
+                <circle cx="40" cy="60" r="28" fill="none" stroke="#D4872C" stroke-width="1" stroke-dasharray="3 3" opacity="0.4"/>
+                <circle cx="40" cy="50" r="8" fill="#D4872C" opacity="0.7"/>
+                <path d="M26 72 Q26 62 40 62 Q54 62 54 72" fill="#D4872C" opacity="0.7"/>
+                <text x="40" y="102" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" font-weight="600" fill="#6B6B6B">Real Person</text>
+              </g>
+
+              <!-- Pillar 2: Plan -->
+              <g id="pillar-2" opacity="0">
+                <circle cx="170" cy="60" r="28" fill="#1A1A1A" stroke="#2A2A2A" stroke-width="1"/>
+                <circle cx="170" cy="60" r="28" fill="none" stroke="#D4872C" stroke-width="1" stroke-dasharray="3 3" opacity="0.4"/>
+                <rect x="159" y="47" width="22" height="26" rx="3" fill="none" stroke="#D4872C" stroke-width="1.5" opacity="0.8"/>
+                <line x1="163" y1="54" x2="177" y2="54" stroke="#D4872C" stroke-width="1.2" opacity="0.6"/>
+                <line x1="163" y1="59" x2="177" y2="59" stroke="#D4872C" stroke-width="1.2" opacity="0.6"/>
+                <line x1="163" y1="64" x2="171" y2="64" stroke="#D4872C" stroke-width="1.2" opacity="0.5"/>
+                <text x="170" y="102" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" font-weight="600" fill="#6B6B6B">Custom Plan</text>
+              </g>
+
+              <!-- Pillar 3: Weekly -->
+              <g id="pillar-3" opacity="0">
+                <circle cx="300" cy="60" r="28" fill="#D4872C"/>
+                <circle cx="300" cy="60" r="28" fill="none" stroke="#D4872C" stroke-width="2" opacity="0.35"/>
+                <path d="M289 55 C289 49 294 44 300 44 C306 44 311 49 311 55 C311 63 300 73 300 73 C300 73 289 63 289 55Z" fill="white" opacity="0.85"/>
+                <circle cx="300" cy="55" r="3" fill="#D4872C"/>
+                <text x="300" y="102" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" font-weight="600" fill="#6B6B6B">Every Week</text>
+              </g>
+            </svg>
+          </div>
+
+          <p class="about-header-sub reveal reveal-delay-3">Based in Lagos. Certified trainer and nutrition coach. Six years helping busy professionals across West Africa build fitness habits that don't fall apart when life gets complicated.</p>
+          <div class="about-header-actions reveal reveal-delay-4">
+            <a href="booking.html" class="btn-primary">
+              Book Your Free Strategy Call
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="how_it_works.html" class="link-cta">
+              See how it works
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- ══════════════════════════════════
+         SECTION 2 — ORIGIN STORY
+    ══════════════════════════════════ -->
+    <section id="origin">
+      <div class="container">
+        <div class="origin-inner">
+          <div class="origin-label">
+            <p class="section-eyebrow reveal">Origin story</p>
+          </div>
+          <div class="origin-content">
+            <h2 class="origin-headline reveal reveal-delay-1">I started coaching because I got tired of watching smart people fail at fitness.</h2>
+
+            <div class="origin-body">
+              <p class="reveal reveal-delay-2">Not because they lacked discipline. Not because they weren't trying hard enough. But because everything they were handed — the apps, the generic plans, the one-size-fits-all programmes — ignored the reality of their lives.</p>
+
+              <p class="reveal">I saw it constantly. Friends working 12-hour days in finance downloading workout plans designed for people with three free hours a day. Colleagues trying to follow American meal prep videos with ingredients they couldn't find in Lagos. People who'd start strong, hit one disruption — travel, a deadline, a family crisis — and the whole thing would collapse because the plan had no flexibility built in.</p>
+
+              <p class="reveal">I'd been there myself.</p>
+
+              <p class="reveal">In my early twenties, I was working in corporate sales, putting in long hours, and watching my health slip. I tried the popular apps. I joined a gym I rarely used. I'd start programmes on Monday and abandon them by Thursday because they didn't account for the fact that some weeks I'd be traveling, some weeks I'd be slammed, and some weeks I'd just be too exhausted to think.</p>
+
+              <!-- Pull quote -->
+              <blockquote class="origin-pullquote reveal">
+                <p>"Not more information. Not another app. A real person who understands their context and shows up consistently."</p>
+              </blockquote>
+
+              <p class="reveal">What finally worked for me wasn't finding the perfect programme. It was working with someone who built around my actual life. A coach who adjusted when things changed. Someone who kept me accountable when motivation disappeared.</p>
+
+              <p class="reveal">That's when I realised: this is what most people need. Not more information. Not another app. A real person who understands their context and shows up consistently.</p>
+
+              <p class="reveal">So I got certified. Started coaching part-time. Built a process that prioritised real life over theory. And six years later, this is all I do — because I've seen it work for over 150 professionals who were exactly where I used to be.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════
+         SECTION 3 — PHILOSOPHY
+    ══════════════════════════════════ -->
+    <section id="philosophy">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow reveal">How I think</p>
+          <h2 class="section-headline reveal reveal-delay-1">What I believe about fitness and coaching.</h2>
+        </div>
+
+        <div class="philosophy-grid">
+
+          <div class="philosophy-block reveal reveal-delay-1">
+            <div class="phil-rule"></div>
+            <h3 class="phil-headline">Fitness isn't complicated.<br><em>Life is.</em></h3>
+            <p class="phil-body">Most people don't fail because they don't know what to do. They fail because the plan doesn't fit the reality of their week. My job isn't to give you the most cutting-edge programme or the most optimised protocol. It's to build something you can actually sustain — and then make sure you don't abandon it when life gets messy.</p>
+          </div>
+
+          <div class="philosophy-block philosophy-block--alt reveal reveal-delay-2">
+            <div class="phil-rule"></div>
+            <h3 class="phil-headline">Generic<br><em>doesn't work.</em></h3>
+            <p class="phil-body">You're not generic. Your schedule isn't generic. Your stress levels, your access to equipment, your food preferences, your history with fitness — none of it is generic. So why would I give you a template I've sent to 200 other people? Every programme I build is custom. Every check-in is personal. That's not a luxury. That's the baseline.</p>
+          </div>
+
+          <div class="philosophy-block reveal reveal-delay-1">
+            <div class="phil-rule"></div>
+            <h3 class="phil-headline">Accountability<br><em>is everything.</em></h3>
+            <p class="phil-body">You already know you should work out. You already know you should eat better. Knowing isn't the problem. Doing it consistently when no one's watching — that's the problem. The reason weekly check-ins work is simple: you know someone's paying attention. You know I'll notice if you disappear. That small bit of external accountability is often the difference between quitting in week three and still going strong in month six.</p>
+          </div>
+
+          <div class="philosophy-block philosophy-block--alt reveal reveal-delay-2">
+            <div class="phil-rule"></div>
+            <h3 class="phil-headline">I work best with people who<br><em>are ready to commit.</em></h3>
+            <p class="phil-body">I don't need you to pretend you have unlimited time or motivation. I need you to tell me the truth about your schedule, your barriers, and what's actually hard for you. Then we build around that. If you're looking for someone to hold your hand and tell you it's okay to skip workouts, I'm not your coach. If you're looking for someone who'll build a plan for your reality — and hold you accountable to it — then we should talk.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════
+         SECTION 4 — CREDENTIALS
+    ══════════════════════════════════ -->
+    <section id="credentials">
+      <div class="container">
+        <div class="credentials-inner">
+          <div class="credentials-text">
+            <p class="section-eyebrow reveal">Background</p>
+            <h2 class="credentials-headline reveal reveal-delay-1">Six years. 150+ clients. One focus.</h2>
+            <p class="credentials-lead reveal reveal-delay-2">I'm a certified personal trainer and nutrition coach with six years of full-time coaching experience. I've worked with over 150 clients across West Africa — from Lagos to Accra to Abuja and beyond — helping busy professionals build sustainable fitness habits without upending their lives.</p>
+            <p class="credentials-body reveal reveal-delay-3">I've coached corporate executives who travel three weeks a month. New parents managing postpartum recovery with zero sleep. Entrepreneurs building startups on erratic schedules. Shift workers. Frequent flyers. People with home gyms, hotel gyms, and no gyms at all.</p>
+            <p class="credentials-body reveal reveal-delay-3">The common thread isn't the programme. It's the process: personalised planning, weekly accountability, and real-time adjustments when life happens. This isn't a side project. It's my full-time work. And I keep my client roster small enough that I can give every person the attention they're paying for.</p>
+          </div>
+
+          <div class="credentials-sidebar">
+            <!-- Certification badges -->
+            <div class="cert-list reveal reveal-delay-1">
+              <div class="cert-item">
+                <div class="cert-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+                </div>
+                <div>
+                  <div class="cert-name">ISSA Certified Personal Trainer</div>
+                  <div class="cert-body">International Sports Sciences Association</div>
+                </div>
+              </div>
+              <div class="cert-item">
+                <div class="cert-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                </div>
+                <div>
+                  <div class="cert-name">Precision Nutrition Level 1</div>
+                  <div class="cert-body">Certified Nutrition Coach</div>
+                </div>
+              </div>
+              <div class="cert-item">
+                <div class="cert-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                </div>
+                <div>
+                  <div class="cert-name">CPR / First Aid Certified</div>
+                  <div class="cert-body">Current certification</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience grid -->
+            <div class="exp-grid reveal reveal-delay-2">
+              <div class="exp-item">
+                <div class="exp-num">150<span>+</span></div>
+                <div class="exp-label">Clients coached</div>
+              </div>
+              <div class="exp-item">
+                <div class="exp-num">6</div>
+                <div class="exp-label">Years full-time</div>
+              </div>
+              <div class="exp-item">
+                <div class="exp-num">3<span>+</span></div>
+                <div class="exp-label">Countries served</div>
+              </div>
+              <div class="exp-item">
+                <div class="exp-num">0</div>
+                <div class="exp-label">Automated replies</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════
+         SECTION 5 — OUTSIDE THE WORK
+    ══════════════════════════════════ -->
+    <section id="outside">
+      <div class="container">
+        <div class="outside-inner">
+          <div class="outside-icon reveal" aria-hidden="true">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="40" cy="40" r="38" fill="#F5F5F3" stroke="#E5E5E5" stroke-width="1"/>
+              <!-- Football -->
+              <circle cx="32" cy="44" r="14" fill="none" stroke="#D4872C" stroke-width="1.5" opacity="0.7"/>
+              <path d="M32 30 L32 34 M26 34 L29 37 M38 34 L35 37 M24 44 L28 44 M36 44 L40 44 M26 50 L29 47 M38 50 L35 47 M32 54 L32 58" stroke="#D4872C" stroke-width="1.2" opacity="0.5"/>
+              <!-- Book -->
+              <rect x="48" y="30" width="18" height="24" rx="2" fill="none" stroke="#D4872C" stroke-width="1.5" opacity="0.6"/>
+              <line x1="52" y1="37" x2="62" y2="37" stroke="#D4872C" stroke-width="1" opacity="0.4"/>
+              <line x1="52" y1="41" x2="62" y2="41" stroke="#D4872C" stroke-width="1" opacity="0.4"/>
+              <line x1="52" y1="45" x2="58" y2="45" stroke="#D4872C" stroke-width="1" opacity="0.3"/>
+              <!-- Rest symbol -->
+              <path d="M22 22 Q26 18 30 22" stroke="#D4872C" stroke-width="1.5" fill="none" opacity="0.5" stroke-linecap="round"/>
+              <path d="M24 26 Q28 22 32 26" stroke="#D4872C" stroke-width="1.5" fill="none" opacity="0.4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="outside-text">
+            <p class="section-eyebrow reveal">Outside the work</p>
+            <h2 class="outside-headline reveal reveal-delay-1">When I'm not coaching.</h2>
+            <p class="outside-body reveal reveal-delay-2">I'm based in Lagos. When I'm not working with clients, you'll find me training (I still practice what I preach), reading about behavioural psychology and habit formation, or trying to keep up with football — Arsenal, specifically, which requires a certain level of emotional resilience.</p>
+            <p class="outside-body reveal reveal-delay-3">I believe rest is part of the work, so I protect my Sundays. No check-ins. No client calls. Just recovery.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════
+         SECTION 6 — CTA
+    ══════════════════════════════════ -->
+    <section id="about-cta">
+      <div class="container">
+        <p class="cta-eyebrow reveal">Work together</p>
+        <h2 class="cta-headline reveal reveal-delay-1">Let's talk about your goals.</h2>
+        <p class="cta-body reveal reveal-delay-2">If what I've written here resonates — if you're tired of programmes that don't fit your life and you're ready to work with someone who'll build around your reality — let's have a conversation. Book a free strategy call. 25 minutes. No sales pitch. No pressure. Just an honest conversation about where you are and where you want to be.</p>
+        <div class="reveal reveal-delay-3">
+          <a href="booking.html" class="btn-primary" style="display:inline-flex;">
+            Book Your Free Strategy Call
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <p class="cta-reassurance reveal reveal-delay-4">No cost. No commitment. Just clarity.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Marcus<span>.</span></div>
+        <p class="footer-tagline">Personal fitness coaching for busy professionals across West Africa. Real coaching. Real results.</p>
+      </div>
+      <div>
+        <p class="footer-col-label">Navigate</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="how_it_works.html">How It Works</a></li>
+          <li><a href="results.html">Results</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="booking.html">Book a Call</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-label">Contact</p>
+        <ul class="footer-links">
+          <li><a href="https://wa.me/[number]">WhatsApp</a></li>
+          <li><a href="https://instagram.com/marcusosei.fitness">@marcusosei.fitness</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-legal">© 2025 Marcus Osei Fitness. All rights reserved.</span>
+      <div class="footer-social">
+        <a href="https://instagram.com/marcusosei.fitness">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          Instagram
+        </a>
+        <a href="https://wa.me/[number]">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/about.js"></script>
+</body>
+</html>
